@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImanSan - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background-color: #EEF5FF;  /* Light blue background */
+            color: #1B3358;  /* Dark blue text */
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(27, 51, 88, 0.2);  /* Blue-tinted shadow */
+        }
+
+        .hero-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #1B3358;  /* Dark blue */
+        }
+
+        .title {
+            font-size: 1.25rem;
+            color: #2E5090;  /* Medium blue */
+            margin-bottom: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: #2E5090;  /* Medium blue */
+            text-decoration: none;
+            padding: 0.5rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .social-links a:hover {
+            background-color: #B4D4FF;  /* Light blue hover */
+            color: #1B3358;  /* Dark blue text */
+        }
+
+        section {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(27, 51, 88, 0.1);  /* Blue-tinted shadow */
+            border: 1px solid #B4D4FF;  /* Light blue border */
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #1B3358;  /* Dark blue */
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background: #F6FAFF;  /* Very light blue */
+            padding: 1.5rem;
+            border-radius: 6px;
+            border: 1px solid #B4D4FF;  /* Light blue border */
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-item {
+            background: #F6FAFF;  /* Very light blue */
+            padding: 0.75rem;
+            border-radius: 4px;
+            text-align: center;
+            border: 1px solid #B4D4FF;  /* Light blue border */
+            color: #2E5090;  /* Medium blue text */
+        }
+
+        .experience-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #B4D4FF;  /* Light blue border */
+        }
+
+        .experience-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #B4D4FF;  /* Light blue */
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            margin: 0.25rem;
+            color: #1B3358;  /* Dark blue text */
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <img src="iman1.jpg" alt="Profile" class="profile-img">
+            <div class="hero-content">
+                <h1>Mohamad Iman Muhaimin Husin</h1>
+                <div class="title">Software Engineering Student</div>
+                <p>
+                    Experienced in software engineering and product analysis, with hands-on expertise in optimizing operational processes, conducting testing, and collaborating with cross-functional teams. Possess a strong academic background, a passion for problem-solving, and a drive to apply my knowledge to impactful projects while contributing to a dynamic team.
+                </p>
+                <div class="social-links">
+                    <a href="#">GitHub</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Email</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rest of the content remains the same -->
+        <!-- Previous sections (Featured Projects, Skills, Experience) -->
+        <!-- Keeping the same structure but inheriting the new color scheme -->
+        
+        <section>
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Gentain Padu Driving Training System</h3>
+                    <p>GPDTS is a web-based platform using HTML, CSS, JavaScript, PHP and Laravel. It serves three user roles: admin, tutor, and student. The main function include booking driving classes and manage student progress.</p>
+                    <div>
+                        <span class="tag">Laravel</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Book Management System</h3>
+                    <p>Book Management System is a .NET framework website use to store and manage book collection. It also allow buyer to search and view stock of book. Applied HTML, Microsoft SQL and JavaScript.</p>
+                    <div>
+                        <span class="tag">.NET</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Thothrift</h3>
+                    <p>Developed a website to sell and manage used clothing such as shirt, pants, and cap.</p>
+                    <div>
+                        <span class="tag">PHP</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Enhancement: Sorter App Offline Error Message</h3>
+                    <p>Create Feature Request Forms (FRF) for the Business Project Manager (BPM) based on stakeholder requests. Gather requirements from stakeholders, collaborate with BPM, propose UI/UX suggestions, and maintain comprehensive documentation records.</p>
+                    <div>
+                        <span class="tag">PHP</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">HTML</div>
+                <div class="skill-item">CSS</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">PHP</div>
+                <div class="skill-item">SQL</div>
+                <div class="skill-item">Java</div>
+                <div class="skill-item">C#</div>
+                <div class="skill-item">Python</div>
+                <div class="skill-item">Bash</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Product Intern</h3>
+                <div>SPX Xpress Malaysia Sdn Bhd | Aug 2024 - Jan 2025</div>
+                <p>Address operational gaps, execute test cases with the regional team, and document results, including edge cases. Create training materials, train users, and manage rollouts with clear timelines. Handle production issues by resolving bugs, responding to user queries, and raising tickets as needed.</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
